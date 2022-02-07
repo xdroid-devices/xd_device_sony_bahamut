@@ -28,7 +28,8 @@ $(call inherit-product, vendor/sony/bahamut/bahamut-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-xdroid
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal

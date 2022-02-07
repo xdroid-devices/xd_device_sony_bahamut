@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2020 The aospOS Project
+# Copyright (C) 2020 The xdroidOSS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_bahamut.mk
+    $(LOCAL_DIR)/xdroid_bahamut.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_bahamut-user \
-    aosp_bahamut-userdebug \
-    aosp_bahamut-eng
+    xdroid_bahamut-user \
+    xdroid_bahamut-userdebug \
+    xdroid_bahamut-eng

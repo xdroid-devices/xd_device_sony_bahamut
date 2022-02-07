@@ -19,8 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common aosp stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common xdroidsp stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT := 1080
+XDROID_MAINTAINER := Friction
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Inherit from common.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,7 +34,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := bahamut
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_NAME := aosp_bahamut
+PRODUCT_NAME := xdroid_bahamut
 PRODUCT_MODEL := Xperia 5
 
 PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
